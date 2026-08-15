@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AngelAI Privacy Notice | EdenCore</title>
+  <meta name="description" content="Privacy notice for the AngelAI friend beta by EdenCore." />
+  <style>
+    :root{color-scheme:dark;--bg:#08111f;--panel:#101b2d;--text:#f6f0df;--muted:#b8c2d0;--gold:#d3b46a;--line:#24344b}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}main{max-width:780px;margin:auto;padding:48px 22px 80px}a{color:var(--gold)}h1{font-size:clamp(2rem,6vw,3.4rem);line-height:1.05;margin:.3rem 0 1rem}h2{margin-top:2rem;font-size:1.3rem}p,li{color:var(--muted)}.eyebrow{color:var(--gold);font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:.8rem}.card{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:20px;margin:22px 0}.nav{display:flex;gap:16px;flex-wrap:wrap;margin-top:32px}.updated{font-size:.9rem;color:var(--muted)}
+  </style>
+</head>
+<body><main>
+  <div class="eyebrow">EdenCore · AngelAI</div>
+  <h1>Privacy Notice</h1>
+  <p class="updated">Friend beta · Updated August 15, 2026</p>
+  <div class="card"><strong>Your personal context is part of the product, not advertising inventory.</strong><p>AngelAI is designed to use conversation history, memories, profile context, and user-provided Library sources to provide continuity. This notice describes the current friend-beta data path reflected in the deployed engineering design.</p></div>
+  <h2>Information Angel may process</h2>
+  <ul>
+    <li>Email and account identity for sign-in and account security.</li>
+    <li>Conversation messages for responses and continuity.</li>
+    <li>Memories derived from conversation for relevant personal context.</li>
+    <li>Onboarding reflections stored on the device, plus an onboarding-completion flag in Supabase.</li>
+    <li>Dragonfly safety/orchestration signals and bounded numeric response-quality measurements.</li>
+    <li>Optional message feedback and short beta reports.</li>
+    <li>Private Library sources and passages a user chooses to add.</li>
+    <li>Message content sent server-side to the model provider to generate a response.</li>
+  </ul>
+  <h2>Where information is stored and processed</h2>
+  <p>Account, conversation, memory, feedback, Library, and related application records use Supabase. Model-generation requests are sent server-side to the configured OpenAI API; provider credentials are not placed in the mobile app. Angel requests provider-side storage to be disabled where supported, but provider retention is governed by the provider's applicable policies and settings.</p>
+  <h2>Private beta reports</h2>
+  <p>Angel's beta-report path is intentionally bounded. Reports contain the category, short user-entered details, screen, platform, app version when available, status, and timestamps. The founder review view is designed not to expose reporter identity and does not automatically attach chats, Library text, screenshots, credentials, or account identity.</p>
+  <h2>Access and isolation</h2>
+  <p>Personal application data is intended to be user-isolated. Sensitive application tables are accessed through Angel's authenticated backend rather than directly from the mobile client. Row-level security remains enabled as defense in depth.</p>
+  <h2>Deletion and control</h2>
+  <p>Angel includes account-deletion and source-deletion paths in the current product design. Profile-owned records are designed to cascade with account deletion. Device-local onboarding reflections can be removed with local app data. Users should also be able to correct or remove personal memories through Angel's controls as those surfaces are released.</p>
+  <h2>Beta status</h2>
+  <p>AngelAI is still in friend beta. Data practices may change as features are added or removed. This page will be updated when the deployed data path materially changes.</p>
+  <div class="nav"><a href="../terms/">Terms</a><a href="../support/">Support</a></div>
+</main></body></html>
